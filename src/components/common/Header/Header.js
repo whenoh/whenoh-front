@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 const Header = () => (
   <header className={cx('header')}>
     <Link to="/" className={cx('logo-wrapper')} alt="logo">
-      <span className={cx('logo-txt')}>News Aggregated</span>
+      <img className={cx('logo-img')} src='https://s3.ap-northeast-2.amazonaws.com/whenoh/logo.png' alt='logo'/>
     </Link>
   </header>
 

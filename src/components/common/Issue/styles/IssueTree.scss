@@ -1,27 +1,40 @@
 @import 'utils';
 
-.main {width: 50%;margin-left: 0;min-height: 30px;background: yellow;float: left;}
+.main {width: 50%;margin-left: 0;min-height: 30px;float: left;}
 .header{margin: 4rem;}
-.title {width: 100%;font-size: 4rem;font-weight: 700;text-align: center;}
+.title {width: 100%;font-size: 4rem;font-weight: 700;text-align: center;
+  text-decoration: underline; text-decoration-color: $main-color;}
 .sub-title {width: 100%;font-size: 2rem;font-weight: 300;text-align: center;}
 
 .article-box-wrapper {
   width: 50%;
+  padding: 0 30px;
 }
 .article-box {
   max-width: 100%;
   background: gainsboro;
   display: inline-block;
   padding: 10px;
-  margin: -92px 30px;
+  margin: -92px 0;
   border-radius: 8px;
 }
 .article-title {
+  width: 100%;
   font-size: 2rem;
   font-weight: 500;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+  overflow:hidden;
 }
 .article-url {
-
+  font-family: consolas, monospace;
+  color: blue;
+  font-size: 1.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 2px 0 2px;
 }
 .article-node {
   margin: 0 auto;
@@ -41,5 +54,15 @@
   height: 0;
   border-top: 0 solid transparent;
   border-bottom: 20px solid transparent;
-  margin: -92px 10px;
+  margin: -92px -20px;
+}
+.article-time {
+  position: absolute;
+  text-decoration: underline; text-decoration-color: $main-color;
+}
+
+.time-rapper {
+  width: 50%;
+  margin: -100px -20px;
+  font-size: 2rem;
 }
