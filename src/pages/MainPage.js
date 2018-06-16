@@ -1,10 +1,11 @@
 import React from 'react';
 import PageTemplate from 'components/common/PageTemplate';
-import FirstArticle from 'components/main/FirstArticle';
+import PostSlider from 'components/common/PostSlider';
 
 const MainPage = () => (
   <PageTemplate>
-    <FirstArticle />
+    <PostSlider title={'POPULAR CARDS'}/>
+    <PostSlider title={'LATEST CARDS'}/>
   </PageTemplate>
 );
 

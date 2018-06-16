@@ -1,0 +1,7 @@
+@import 'utils';
+.post-slider-wrapper { padding: 25px 0; }
+.title { font-size: 24px; font-weight: bold; color: $dark-indigo; }
+.post-slider { width: 100%; display: flex; overflow-x: scroll; }
+.post {
+  &:not(:last-child) { margin-right: 30px;  }
+}
