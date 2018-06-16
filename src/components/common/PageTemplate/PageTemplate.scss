@@ -1,0 +1,11 @@
+@import 'utils';
+
+.page-template {
+  background: linear-gradient(0deg, $cobalt, $darkBlue);
+}
+
+main {
+  max-width: 1129px;
+  margin: 0 auto;
+  min-height: calc(100vh - 9rem - 9.6rem);
+}

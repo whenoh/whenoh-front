@@ -1,0 +1,9 @@
+@import 'utils';
+
+.footer { display: flex; justify-content: center; align-items: center; flex-direction: column;
+  width: 100%; height: 9.6rem; background-color: $dark-indigo; }
+.footer-logo { display: flex; justify-content: center; }
+.footer-logo-img { display: inline-block; width: 32px; height: 32px; border-radius: 8px; background-color: $yellow-orange;
+  margin-right: 6px; }
+.footer-logo-txt { font-family: Baloo, 'sans-serif'; font-size: 22.4px; color: white;}
+.footer-info { font-size: 14px; color: white; }
