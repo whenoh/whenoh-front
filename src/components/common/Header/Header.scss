@@ -1,4 +1,6 @@
-.header { display:flex; align-items: center; height: 9rem; width: 100%; padding: 0 4rem; }
+@import 'utils';
+
+.header { display:flex; align-items: center; height: 9rem; width: 100%; padding: 0 4rem; background-color: $main-color}
 .logo-wrapper { display: flex; align-items: center; }
 .logo { display: inline-block; width: 4rem; margin-right: 8px; }
 .logo-txt { color: white; font-family: Baloo, 'sans-serif'; font-size: 2.8rem; letter-spacing: -0.4px; }
