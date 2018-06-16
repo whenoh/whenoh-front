@@ -1,1 +1,4 @@
-export { default as post } from './post';
+import post  from './post';
+import issue from './issue';
+
+export { post, issue };
