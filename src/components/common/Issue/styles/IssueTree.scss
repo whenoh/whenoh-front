@@ -6,11 +6,15 @@
 .sub-title {width: 100%;font-size: 2rem;font-weight: 300;text-align: center;}
 
 .article-box-wrapper {
+  width: 50%;
 }
 .article-box {
-  background: brown;
+  max-width: 100%;
+  background: gainsboro;
   display: inline-block;
   padding: 10px;
+  margin: -92px 30px;
+  border-radius: 8px;
 }
 .article-title {
   font-size: 2rem;
@@ -27,8 +31,15 @@
   border-radius: 50%;
 }
 .article-branch {
-  margin: 0 auto;
-  width: 6px;
+  margin: -2px auto;
+  width: 8px;
   background: #333333;
   height: 80px;
+}
+.article-tip {
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  margin: -92px 10px;
 }

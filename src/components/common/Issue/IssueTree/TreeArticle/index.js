@@ -5,6 +5,7 @@ import styles from '../../styles/IssueTree.scss';
 import ArticleBox from './ArticleBox';
 import ArticleNode from './ArticleNode';
 import ArticleBranch from './ArticleBranch';
+import ArticleTip from './ArticleTip';
 
 const cx = classNames.bind(styles);
 class TreeArticle extends React.Component {
@@ -13,14 +14,14 @@ class TreeArticle extends React.Component {
   }
   render() {
     console.log('DDDDDDDD', this.props);
-    const { title, position } = this.props;
+    const { title, position, article, isLast } = this.props;
     return(
       <Fragment>
         <ArticleNode />
-        <ArticleBranch />
-        <ArticleBox position={ position }>
+        { !isLast && <ArticleBranch /> }
+        <ArticleBox position={ position } isLast={ isLast }>
           <div className={cx('article-title')}>{ title }</div>
-          <div className={cx('article-url')}>{ 'description' }</div>
+          <div className={cx('article-url')}>{ article }</div>
         </ArticleBox>
       </Fragment>
     )
