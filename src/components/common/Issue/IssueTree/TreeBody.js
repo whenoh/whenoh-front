@@ -15,7 +15,12 @@ class TreeBody extends React.Component {
     return(
       <div>
         { articles.map((article, i) =>
-          <TreeArticle key={article.title + i } { ...article } isLast={ articles.length === i + 1 }/>
+          <TreeArticle
+            key={article.title + i }
+            articleIndex={i}
+            { ...article }
+            isLast={ articles.length === i + 1 }
+          />
         ) }
       </div>
     )

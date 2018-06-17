@@ -17,6 +17,7 @@
   padding: 10px;
   margin: -92px 0;
   border-radius: 8px;
+  cursor: pointer;
 }
 .article-title {
   width: 100%;
@@ -32,7 +33,6 @@
   font-family: consolas, monospace;
   color: blue;
   font-size: 1.4rem;
-  cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 4px 2px 0 2px;
@@ -64,7 +64,6 @@
   position: absolute;
   text-decoration: underline; text-decoration-color: $main-color;
 }
-
 .time-rapper {
   width: 50%;
   margin: -100px -20px;
