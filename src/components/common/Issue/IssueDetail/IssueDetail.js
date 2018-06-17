@@ -12,7 +12,7 @@ const IssueDetail = ({ comments }) => (
   <div className={cx('main')}>
     <ArticleWindow />
     <div className={cx('article-comment-wrapper')}>
-      { comments && comments.map(({title}) => <ArticleComment title={ title } />)}
+      { comments && comments.map((comment) => <ArticleComment { ...comment } />)}
     </div>
   </div>
 );

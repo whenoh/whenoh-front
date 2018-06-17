@@ -19,7 +19,7 @@ console.log(issue);
       <div className={cx('main')}>
         { issue &&
           <Fragment>
-            <TreeHeader title={ issue.title } description={ issue.description }/>
+            <TreeHeader title={ issue.title } description={ issue.description } category={ issue.category }/>
             <TreeBody articles={ issue.articles } />
           </Fragment>
         }

@@ -9,11 +9,12 @@ class TreeHeader extends React.Component {
     super(props);
   }
   render() {
-    const { title, description } = this.props;
+    const { title, description, category } = this.props;
     return(
       <div className={cx('header')}>
         <div className={cx('title')}>{ title }</div>
         <div className={cx('sub-title')}>{ description }</div>
+        <div className={ cx('issue-category') }>{ `#${category}` }</div>
       </div>
     )
   }
