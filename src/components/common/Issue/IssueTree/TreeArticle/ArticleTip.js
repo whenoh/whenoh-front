@@ -14,7 +14,7 @@ class ArticleTip extends React.Component {
     const tipDirection = isLeft ? 'borderLeft' : 'borderRight';
     const tipFloat = isLeft ? 'right' : 'left';
     const tipStyle = { [tipDirection]: '22px solid gainsboro', float : tipFloat };
-    if (this.props.isLast) tipStyle.marginTop = -12;
+    // if (this.props.isLast) tipStyle.marginTop = -12;
     return(
       <div className={cx('article-tip')} style={ tipStyle }>
 

@@ -9,8 +9,9 @@ class ArticleBranch extends React.Component {
     super(props);
   }
   render() {
+    const opacity = this.props.isLast ? 0 : 1;
     return(
-      <div className={cx('article-branch')}>
+      <div className={cx('article-branch')} style={{ opacity }}>
 
       </div>
     )

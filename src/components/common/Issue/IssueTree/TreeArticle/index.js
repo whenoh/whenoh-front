@@ -17,15 +17,15 @@ class TreeArticle extends React.Component {
     console.log('DDDDDDDD', this.props);
     const { title, position, article, isLast, time } = this.props;
     return (
-      <Fragment>
+      <div>
         <ArticleNode />
-        { !isLast && <ArticleBranch /> }
+        <ArticleBranch isLast={isLast}/>
         <ArticleBox position={ position } isLast={ isLast }>
           <div className={cx('article-title')}>{ title }</div>
           <div className={cx('article-url')}>{ article.replace(/^https?:(\/\/)/g, '') }</div>
         </ArticleBox>
         <ArticleDate time={ time } position={ position }/>
-      </Fragment>
+      </div>
     )
   }
 }

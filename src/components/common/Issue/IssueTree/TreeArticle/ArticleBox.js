@@ -16,7 +16,7 @@ class ArticleBox extends React.Component {
     const flatCorner = isLeft ? 'borderTopRightRadius' : 'borderTopLeftRadius';
     const boxStyle = { float, [flatCorner] : 0 };
     const wrapperStyle = { float : position };
-    if (isLast) boxStyle.marginTop = -12;
+    // if (isLast) boxStyle.marginTop = -12;
     return (
       <div className={cx('article-box-wrapper')} style={ wrapperStyle }>
         <div className={cx('article-box')} style={ boxStyle }>

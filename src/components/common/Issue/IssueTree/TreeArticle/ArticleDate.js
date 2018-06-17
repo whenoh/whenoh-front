@@ -11,10 +11,13 @@ class ArticleDate extends React.Component {
   render() {
     const { time, position } = this.props;
     const style = { float : position === 'left' ? 'right' : 'left' };
+    const dateObject = new Date(+time);
+    console.log(dateObject);
     return (
       <div className={cx('time-rapper')} style={ style }>
         <div className={cx('article-time')} style={{ float: position, position: 'relative' }}>
-          { time }
+          <div>{ `${dateObject.getFullYear()}.${dateObject.getMonth() + 1}.${dateObject.getDate()}` }</div>
+          <div>{ `${dateObject.getHours()}:${dateObject.getMinutes() }` }</div>
         </div>
       </div>
     )

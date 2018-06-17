@@ -28,6 +28,7 @@
   overflow:hidden;
 }
 .article-url {
+  height: 20px;
   font-family: consolas, monospace;
   color: blue;
   font-size: 1.4rem;
@@ -57,6 +58,9 @@
   margin: -92px -20px;
 }
 .article-time {
+  line-height: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
   position: absolute;
   text-decoration: underline; text-decoration-color: $main-color;
 }
