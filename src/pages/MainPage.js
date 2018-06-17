@@ -1,11 +1,10 @@
 import React from 'react';
 import PageTemplate from 'components/common/PageTemplate';
-import PostSlider from 'components/common/PostSlider';
+import SearchBody from 'components/common/SearchBody';
 
 const MainPage = () => (
   <PageTemplate>
-    <PostSlider title={'POPULAR CARDS'}/>
-    <PostSlider title={'LATEST CARDS'}/>
+    <SearchBody title={'POPULAR CARDS'}/>
   </PageTemplate>
 );
 

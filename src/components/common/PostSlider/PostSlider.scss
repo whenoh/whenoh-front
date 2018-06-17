@@ -1,7 +1,20 @@
 @import 'utils';
 .post-slider-wrapper { padding: 25px 0; }
-.title { font-size: 24px; font-weight: bold; color: $dark-indigo; }
+.title { font-size: 24px; font-weight: bold; color: $main-color; margin: 10px;}
 .post-slider { width: 100%; display: flex; overflow-x: scroll; }
 .post {
   &:not(:last-child) { margin-right: 30px;  }
+}
+
+.search-thumbnail {
+  width: 400px;
+  height: 260px;
+}
+.post-desc-warp {
+  background: $main-color;
+  opacity: .8;
+}
+.post-desc {
+  color: white;
+  font-size: 20px;
 }

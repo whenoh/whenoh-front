@@ -1,0 +1,21 @@
+@import 'utils';
+
+.search-wrap {
+  padding: 30px;
+}
+.search-input-wrapper {
+  margin: 0 auto;
+}
+.search-input {
+  width: 30%;
+  height: 60px;
+  border: 6px solid $main-color;
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+  outline: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: gray;
+  padding: 10px;
+}

@@ -4,8 +4,8 @@ import styles from './PostWriteWrapper.scss';
 import PostWriteForm from '../PostWriteForm';
 
 
-const cx = classNames.bind(styles);
-
+`const cx = classNames.bind(styles);
+`
 const PostWriteWrapper = () => {
   return (
     <div>

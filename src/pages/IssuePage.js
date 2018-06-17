@@ -19,9 +19,6 @@ class IssuePage extends React.Component {
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', this.setIssue.bind(this));
     xhr.open('GET', `https://serverless.arteight.co.kr/v1/issue/${id}`);
-
-    // xhr.open('GET', `https://fo8qoov62m.execute-api.ap-northeast-2.amazonaws.com/dev/issue/${id}`);
-    // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhr.send();
   }
 
@@ -31,9 +28,6 @@ class IssuePage extends React.Component {
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load', this.setComments.bind(this));
     xhr.open('GET', `https://serverless.arteight.co.kr/v1/comment`/*/${id}`*/);
-
-    // xhr.open('GET', `https://fo8qoov62m.execute-api.ap-northeast-2.amazonaws.com/dev/issue/${id}`);
-    // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhr.send();
   }
 
