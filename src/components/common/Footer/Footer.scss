@@ -5,5 +5,10 @@
 .footer-logo { display: flex; justify-content: center; }
 .footer-logo-img { display: inline-block; width: 32px; height: 32px; border-radius: 8px; background-color: $main-color;
   margin-right: 6px; }
-.footer-logo-txt { font-family: Baloo, 'sans-serif'; font-size: 22.4px; color: white;}
+.footer-logo-txt {
+  font-family: 'Playfair Display', serif;
+  font-size: 22.4px;
+  color: white;
+  font-weight: 900;
+}
 .footer-info { font-size: 14px; color: white; }

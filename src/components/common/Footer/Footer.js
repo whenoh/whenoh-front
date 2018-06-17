@@ -7,9 +7,9 @@ const cx = classNames.bind(styles);
 const Footer = () => (
   <div className={cx('footer')}>
     <div className={cx('footer-logo')}>
-      <span className={cx('footer-logo-txt')}>News Agreegated</span>
+      <span className={cx('footer-logo-txt')}>when. oh,</span>
     </div>
-    <span className={cx('footer-info')}>© News Aggregated.lol, 2018</span>
+    <span className={cx('footer-info')}>© when. oh, 2018</span>
   </div>
 );
 
