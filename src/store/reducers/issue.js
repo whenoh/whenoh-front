@@ -4,14 +4,17 @@ import { Map } from 'immutable';
 // actions
 const SET_ISSUE = 'issue/SET_ISSUE';
 const SET_CURRENT_ARTICLE = 'issue/SET_CURRENT_ARTICLE';
+const SET_COMMENTS = 'issue/SET_COMMENTS';
 
 // action creators
 export const setIssue = createAction(SET_ISSUE);
 export const setCurrentArticle = createAction(SET_CURRENT_ARTICLE);
+export const setComments = createAction(SET_COMMENTS);
 
 const initialState = Map({
   data: false,
-  currentArticleIndex: 0
+  currentArticleIndex: 0,
+  comments: false,
 });
 
 // reducer
@@ -22,6 +25,9 @@ export default handleActions({
 
   [SET_CURRENT_ARTICLE]: (state, action) =>
     state.set('currentArticleIndex', action.payload),
+
+  [SET_COMMENTS]: (state, action) =>
+    state.set('comments', action.payload),
 
 }, initialState);
 
